@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 services:
   # ─── MongoDB ────────────────────────────────
@@ -22,7 +22,7 @@ services:
       - MONGODB_URI=mongodb://mongo:27017/fileforge
       - MAX_FILE_SIZE=52428800
       - UPLOAD_DIR=./uploads
-      - ALLOWED_ORIGINS=http://13.210.244.60
+      - ALLOWED_ORIGINS=http://16.176.232.43
     expose:
       - "5000"
     depends_on:
